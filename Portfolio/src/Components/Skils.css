@@ -1,0 +1,67 @@
+.Skills {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    align-items: center;
+    height: 100%;
+}
+
+.Skills .slider-container {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Skills .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.9); /* Smaller for non-focused items */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.5; /* Faded for non-focused items */
+}
+
+.Skills .image-wrapper:nth-child(3) {
+    transform: scale(1.3); /* Highlight center skill */
+    opacity: 1; /* Fully visible */
+}
+
+.Skills .image-wrapper img {
+    height: 187px;
+    width: 187px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px #d7d6d6;
+}
+
+
+.Skills .controls {
+    position: relative;
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.Skills .controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Skills .controls button:hover {
+    color: rgb(255, 51, 102);
+}
