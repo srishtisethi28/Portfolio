@@ -21,6 +21,10 @@
     font-style: italic;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.logo:hover{
+    transition: 0.2s ease-in-out;
+    color: #fff;
+}
 
 .nav-menu {
     flex-direction: column;

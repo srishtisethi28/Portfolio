@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     height: 400px; /* Use auto for height if content size is dynamic */
     margin: 3rem 0;
+    margin-bottom: 12rem;
 }
 
 .about .left {
@@ -45,7 +46,7 @@
     height: 300px;
     width: 300px;
     border: 1px solid #333;
-    box-shadow: -5px 5px 25px rgba(199, 188, 188, 0.5); /* Add shadow for 
+     /* Add shadow for 
     better depth */
     border-radius: 35px;
 }
@@ -57,11 +58,26 @@
     z-index: 4;
 }
 
+.right .img-stack-top img{
+    position: absolute;
+    top: 30px; /* Adjust as needed */
+    right: 50px; /* Adjust as needed */
+    box-shadow: -5px 5px 25px rgba(199, 188, 188, 0.5);
+    z-index: 4;
+}
 .right .img-stack-bottom {
     position: absolute;
     top: 0; /* Adjust as needed */
     right: 0; /* Adjust as needed */
+    
     z-index: 2;
+}
+.right .img-stack-bottom img{
+    position: absolute;
+    top: 0px; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
+    box-shadow: 5px -5px 25px rgba(250, 239, 239, 0.5);
+    z-index: 4;
 }
 @media screen and (max-width:640px) {
     .about{

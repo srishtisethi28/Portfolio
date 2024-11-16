@@ -23,6 +23,9 @@
 .hero{
     height: 100%;
     width: 100%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
 }
 .hero .content {
     position: absolute;
@@ -31,16 +34,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 70%; /* Start off-screen at the bottom */
-    left: 50%;
+    top: 50%; /* Start off-screen at the bottom */
+    left: 20%;
     opacity: 0;
     z-index: 1;
-    transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); /* Classy curve */
+    transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1); /* Classy curve */
 }
 
 .hero .content.active {
-    top: 50%; /* Slide to the center */
-    opacity: 1; /* Fade-in */
+    left: 35%; /* Slide to the center */
+    opacity: 2; /* Fade-in */
     z-index: 10;
 }
 
@@ -72,5 +75,31 @@
     .hero .content p{
         font-size: 1rem;
       }
+}
+.image {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow:  0px 0px 25px rgb(187, 187, 187);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 0%;
+    opacity: 0; /* Start with hidden image */
+    z-index: 0; /* Lower layer initially */
+    transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1); /* Classy curve */
+    }
+
+.hero .image.active {
+    right: 15%; /* Slide to the center */
+    opacity: 2; /* Fade-in */
+    z-index: 10; /* Higher layer when active */
+}
+
+.image img {
+    width: 250px;
+    border-radius: 25px;
+    
 }
 
